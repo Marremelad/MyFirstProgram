@@ -1,2 +1,2 @@
 # MyFirstProgram
-Första inlämmningsuppgiften i kursen "Programmering med C#"
+Fï¿½rsta labben i kursen Programmering med C#.
