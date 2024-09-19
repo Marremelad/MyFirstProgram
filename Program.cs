@@ -1,6 +1,6 @@
 ﻿//Lab 1 - Mitt första program.
 //Mauricio Corte
-//NET24
+//.NET24
 
 namespace MyFirstProgram
 {
