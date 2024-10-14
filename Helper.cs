@@ -17,4 +17,12 @@ public abstract class Helper
         
         Console.WriteLine($"Hello {name}!");
     }
+
+    public static void SplitNumber(int number)
+    {
+        for (int i = 0; i < number; i++)
+        {
+            Console.WriteLine(i + 1);
+        }
+    }
 }
