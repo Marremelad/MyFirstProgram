@@ -11,14 +11,14 @@ This is an improved version of the very first assignment we got from school. Che
 
 Keep in mind that the program counts in actual seconds. If happen you pick a number that tests your patience you can always exit the program by typing **ctrl + c**
 
-## Application demo
+### Application demo
 <img src="https://github.com/Marremelad/AssetsAndImages/raw/main/MyFirstProgramScreenRecording.gif" height="300" width="500">
 
 ### Requirements
 * .NET 8 or higher
 
 ### Get started
-If you are using Visual Studio or any other IDE with an integrated repo-cloning function use it with this URL: https://github.com/Marremelad/ChessBoard.git
+If you are using Visual Studio or any other IDE with an integrated repo-cloning function use it with this URL: https://github.com/Marremelad/MyFirstProgram.git
 then open the solution and run the program.
 
 Else, do the following.
