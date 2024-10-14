@@ -6,29 +6,38 @@ public class Menu
 {
     private static int _number;
     private static bool _numberHasBeenChoosen = false;
+
     public static void MainMenu()
     {
-        
-        var choice = AnsiConsole.Prompt(new SelectionPrompt<MenuChoice>()
-            .Title("Welcome to my first program!!!")
-            .PageSize(10)
-            .AddChoices(
-                MenuChoice.Number,
-                MenuChoice.Greet,
-                MenuChoice.Count));
-        
-        switch (choice)
+        while (true)
         {
-            case MenuChoice.Number:
-                Console.WriteLine("Number");
-                break;
-            case MenuChoice.Greet:
-                Console.WriteLine("Greet");
-                break;
-            case MenuChoice.Count:
-                Console.WriteLine("Count");
-                break;
+            Console.Clear();
+            var choice = AnsiConsole.Prompt(new SelectionPrompt<MenuChoice>()
+                .Title("Welcome to my first program!!!")
+                .PageSize(10)
+                .AddChoices(
+                    MenuChoice.Number,
+                    MenuChoice.Greet,
+                    MenuChoice.Count,
+                    MenuChoice.Exit));
+
+            switch (choice)
+            {
+                case MenuChoice.Number:
+                    ChoiceNumber();
+                    break;
+                case MenuChoice.Greet:
+                    ChoiceGreet();
+                    break;
+                case MenuChoice.Count:
+                    ChoiceCount();
+                    break;
+                case MenuChoice.Exit:
+                    return;
+            }
+            Thread.Sleep(3000);
         }
+
     }
 
     public static void ChoiceNumber()
