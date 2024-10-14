@@ -1,6 +1,32 @@
+using System.Reflection;
 namespace MyFirstProgram;
 
-public abstract class Helper
+using System.ComponentModel;
+
+public enum MenuChoice
+{
+    [Description("Pick a number!")]
+    Number,
+
+    [Description("What is your name?")]
+    Greet,
+
+    [Description("Let's count!")]
+    Count
+}
+
+public static class EnumExtensions
+{
+    public static string GetDescription(this Enum value)
+    {
+        FieldInfo? field = value.GetType().GetField(value.ToString());
+        DescriptionAttribute? attribute = field!.GetCustomAttribute<DescriptionAttribute>();
+
+        return attribute != null ? attribute.Description : value.ToString();
+    }
+}
+
+public static class Helper
 {
     public static void HigherThanTen(int number)
     {
@@ -18,7 +44,7 @@ public abstract class Helper
         Console.WriteLine($"Hello {name}!");
     }
 
-    public static void SplitNumber(int number)
+    public static void Count(int number)
     {
         for (int i = 0; i < number; i++)
         {
