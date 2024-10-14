@@ -1,15 +1,13 @@
 using Spectre.Console;
 namespace MyFirstProgram;
 
-using System.ComponentModel;
-
 public enum MenuChoice
 {
     Number,
     Greet,
-    Count
+    Count,
+    Exit,
 }
-
 
 public static class Helper
 {
@@ -34,6 +32,7 @@ public static class Helper
         for (int i = 0; i < number; i++)
         {
             Console.WriteLine(i + 1);
+            Thread.Sleep(1000);
         }
     }
 }
