@@ -18,7 +18,7 @@ Keep in mind that the program counts in actual seconds. If happen you pick a num
 * .NET 8 or higher
 
 ### Get started
-If you are using Visual Studio or any other IDE with an integrated repo-cloning function use it with this URL: https://github.com/Marremelad/MyFirstProgram.git
+If you are using Visual Studio or any other IDE with an integrated repo-cloning function use it with this URL - https://github.com/Marremelad/MyFirstProgram.git
 then open the solution and run the program.
 
 Else, do the following.
