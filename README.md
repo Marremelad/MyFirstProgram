@@ -11,7 +11,7 @@ This is an improved version of the very first assignment we got from school. Che
 Keep in mind that the program counts in actual seconds. If happen you pick a number that tests your patience you can always exit the program by typing **ctrl + c**.
 
 ### Application demo
-<img src="https://github.com/Marremelad/AssetsAndImages/raw/main/MyFirstProgramScreenRecording.gif" height="300" width="500">
+<img src="https://github.com/Marremelad/AssetsAndImages/raw/main/MyFirstProgramScreenRecording.gif" height="300" width="500" alt="Application Demo">
 
 ### Requirements
 * .NET 8 or higher
